@@ -1,0 +1,225 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  margin: 0px 0px 0px 0px;
+  min-width: 684px;
+}
+.menu{
+   
+   background-color: rgb(128, 0, 0);
+   color: white;
+   padding: 5px 25px 5px 0px;
+   margin: 0px 0px 0px 0px;
+   
+}
+.links{
+    color: white;
+    text-decoration: none;
+    border-left-style: solid;
+    border-width: 5px;
+    border-color: black;
+    margin: 1px 0px 1px -5px;
+    padding: 5px 25px 5px 20px;
+    text-align: center;
+}
+.links1{
+  color: white;
+  text-decoration: none;
+  border-left-style: solid;
+  border-width: 10px;
+  border-color: black;
+  margin: 1px 0px 1px -5px;
+  padding: 5px 25px 5px 20px;
+  text-align: center;
+}
+.links1:hover{
+  background-color: black;
+  border-color:  rgb(128, 0, 0);
+  border-left-style: solid;
+  border-width: 10px;
+  border-color: black;
+  margin: 1px 0px 1px -5px;
+  padding: 5px 25px 5px 20px;
+}
+.links:hover {  
+  background-color: black;
+  border-color:  rgb(128, 0, 0);
+  border-left-style: solid;
+  border-width: 5px;
+  border-color: black;
+  margin: 1px 0px 1px -5px;
+  padding: 5px 25px 5px 20px;
+}
+ .menu input[type=text] {
+  padding: 0px;
+  margin-top: 0px;
+  margin-right: 3px;
+  margin-left: 0px;
+  float: right;
+  border: none;
+  font-size: 17px;
+}
+
+.head{
+  background-color: rgb(255, 0, 0);
+  color: white;
+    padding: 5px 20px 10px 20px;
+  margin: 0px 0px 0px 0px;
+  text-align: center;
+}
+.head-h1{
+  padding:  0px 0px -20px 0px;
+}
+.head-p{
+  font-size:14px;
+   margin: 10px 0px 10px 0px;
+   padding:  0px 0px 20px 200px;
+}
+.cuerpo{
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+    min-height: 600px;
+  color: white;
+  padding: 5px 20px 10px 20px;
+  margin: 0px 0px 0px 0px;
+}
+.pie{
+  text-align: center;
+  background-color: rgb(127, 127, 127);
+  color: white;
+  margin: 0px 0px 0px 0px;
+  padding: 5px 20px 10px 20px;
+  border-top-style: solid;
+  border-width: 5px;
+    border-color: rgb(60, 60, 60);
+}
+#fecha{
+   color:rgb(60, 60, 60);
+   display: inline-block;
+   font-weight: bold;
+}
+#hora{
+  color:rgb(60, 60, 60);
+  display: inline-block;
+  font-weight: bold;
+} 
+input{
+  margin: 5px 0px 5px 0px;
+}
+.contanos{
+  height: 300px;
+  width: 80%;
+  margin: 5px 0px 5px 0px;
+}
+table{
+  border-collapse: collapse;
+  width: 100%;
+  border-color: grey;
+  border:solid;
+}
+th{
+  border-color: grey;
+  border:solid;
+}
+td{
+  border-color: grey;
+    border-left: solid;
+    border-right: solid;
+}
+.link-tabla{
+    color: white;
+  text-decoration: none;
+}
+.link-tabla:hover {
+  color: grey;
+  background-color: transparent;
+  text-decoration: underline;
+}
+#buscar[type=text]{
+  padding:0px,0px,5px,0px;
+  margin:0px,0px,0px,0px;
+  font-size: 17px;
+  height:21.3px;
+  width: 258px;
+  background:white;
+  text-decoration: none;
+}
+.boton{
+  width: 42px;
+  height:20px;
+  padding: 16px,0px,0px,0px;
+  margin:0px,0px,5px,0px;
+  float:right;
+  background: grey;
+  color: white;
+  font-size: 17px;
+  border-width: 0px;
+  border-style:solid;
+  border-color:grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+.boton:hover{
+  background:black;
+  border-color:black;
+}
+.link-pie{
+  color:rgb(60, 60, 60);
+  text-decoration: underline;
+  font-weight: bold;
+  font-weight: underline;
+}
+.portfolio{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio > div{
+  width: 225px;
+  height:225px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+ .contenedor{
+  position: relative;
+  width: 50%;
+}
+
+.imagen{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.medio{
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.contenedor:hover .imagen{
+  opacity: 0.1;
+}
+
+.contenedor:hover .medio{
+  opacity: 1;
+}
+
+.text{
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  padding: 0px 0px;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contacto</title>
+	<link rel="stylesheet" href="css\mystyle.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/png" href="imagenes\k.jpg" />
+</head>
+<body>
+ <div class="menu"> <!--aca va el el menu -->
+  <a href="file:///C:/Users/Andr%C3%A9s%20Caudana/Desktop/Trabajo%20de%20martes/index.html" class="links1">Inicio</a>
+  <a href="file:///C:/Users/Andr%C3%A9s%20Caudana/Desktop/Trabajo%20de%20martes/Sobre%20nosotros.html" class="links">Sobre nosotros</a>
+  <a href="file:///C:/Users/Andr%C3%A9s%20Caudana/Desktop/Trabajo%20de%20martes/contacto.html" class="links" >Contacto</a>
+  <input id="buscar" type="text" placeholder="Buscar..">
+  <button type="submit" class="boton" onclick="document.getElementById('buscar').value = '';alert('No hay resultado');" ><i class="fa fa-search"></i></button>
+ </div>
+ <div class="head"><!--aca va el header--->
+	<h1 class="head-h1">Kau-Development</h1>
+	<p class="head-p">Desarrollo Full-stack y diseño grafico</p>
+ </div>
+ <div class="cuerpo"> <!--Aca va El body-->
+  <div class="container">
+   <h2>Contactanos</h2>
+   <p>Estamos dispuestos a ayudarte</p>
+  </div>
+  <!--todos los imput estan en default-->
+   <div class="container" style="background-color:black">
+    <input type="text" placeholder="Nombre" name="name" required>
+    <br>
+    <input type="text" placeholder="Apellido" name="last name" required>
+    <br>
+    <input type="text" placeholder="Email" name="mail" required>
+    <br>
+    <textarea class="contanos" name="subject" placeholder="Contanos......."></textarea>
+   </div>
+   <div class="container">
+    <input type="submit" value="Enviar" onclick="alert('Su mensaje fue enviado');">
+   </div>
+ </div>
+ <div class="pie"> <!--Aca va El Footer-->
+	<a href="file:///C:/Users/Andr%C3%A9s%20Caudana/Desktop/Trabajo%20de%20martes/index.html" class="link-pie">Menu</a>
+  <a href="file:///C:/Users/Andr%C3%A9s%20Caudana/Desktop/Trabajo%20de%20martes/Sobre%20nosotros.html" class="link-pie">Sobre nosotros</a>
+  <a href="file:///C:/Users/Andr%C3%A9s%20Caudana/Desktop/Trabajo%20de%20martes/contacto.html" class="link-pie">Contacto</a>
+  <div>
+   <p id="fecha"></p>
+   <p id="hora"></p>
+  </div>
+  <script>
+   n =  new Date();
+   y = n.getFullYear();
+   m = n.getMonth() + 1;
+   d = n.getDate();
+   h = n.getHours();
+   min = n.getMinutes();
+   s = n.getSeconds();
+    document.getElementById("fecha").innerHTML ="Fecha  : " + d + "/" + m + "/" + y;
+    document.getElementById("hora").innerHTML ="Hora  : " + h + ":" + min;
+  </script>
+ </div>
+</body>
+</html>
